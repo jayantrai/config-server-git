@@ -1,0 +1,13 @@
+server:
+  port: 8191
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jayantrai/spring-cloud-config-store
+          search-paths:
+          - '*service' #tells to go and search in directories that ends with service
+          
+          #with this we have configuration server and store running
